@@ -31,9 +31,6 @@ export default class GradientPath {
 
     // Append the main group to the SVG
     this.svg.appendChild(this.group);
-
-    // Remove the main path once we have the data values
-    this.path.parentNode.removeChild(this.path);
   }
 
   render({ type, stroke, strokeWidth, fill, width }) {

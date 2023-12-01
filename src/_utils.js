@@ -30,6 +30,9 @@ export const styleAttrs = (fill, stroke, strokeWidth, progress) => {
     attrs['fill'] = determineColor(fill, progress);
   }
 
+  attrs['stroke-linecap'] = 'round';
+  attrs['stroke-linejoin'] = 'round';
+
   return attrs;
 };
 
